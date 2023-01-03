@@ -1,6 +1,22 @@
 #include "sort.h"
 
 /**
+ * swap - swap 2 elements in an array
+ * @array: array to sort
+ * @el1: position 1
+ * @el2: position 2
+ */
+
+void swap(int *array, int el1, int el2)
+{
+	int value_swap;
+
+	value_swap = array[el1];
+	array[el1] = array[el2];
+	array[el2] = value_swap;
+}
+
+/**
  * selection_sort - sort an array using selection type of sorting
  * @array: a array
  * @size: number of elements
